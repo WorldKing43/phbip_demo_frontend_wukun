@@ -1,0 +1,33 @@
+{
+  "data":{
+            "ApplicantInfo":
+            [{  
+                "name":"胡娟娟",
+                "sex":"女",
+                "domicileArea":"龙华新区",
+                "documentType":"身份证",
+                "iden":"440301195410194117",
+                "maritalStatus":"已婚",
+                "maritalStatusTime":"2014-03-12",
+                "FamilyNo":"3",
+                "address":"深圳福田区华强北赛格科技园四栋西",
+                "talentType":"其他",
+                "payAccumulationFundTime":"2012-04-15",
+                "AccumulationFundAccount":"199845622205"
+            }],
+            "housingInfo":
+            [{
+                "housingLocated":"宝泰雅苑1栋802室",
+                "doorModel":"二房二厅",
+                "buildingArea":"69.3",
+                "toward":"正南",
+                "structureType":"钢筋混凝土结构",
+                "platformOrGreenSpace":"无",
+                "landUsePeriod":
+                "2087-12-04",
+                "timeForCompletion":
+                "2016-05-14",
+                "locationFactor":"0.5"
+            }]
+        }
+}
