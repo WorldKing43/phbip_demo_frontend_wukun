@@ -10,27 +10,17 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    // proxyTable: {},
-    proxyTable: {
-      // '/api': {
-      //   target: 'http://laptop-6droprsi:8081/phbip_house_mnt',// 请换成你的地址
-      //   changeOrigin: true,
-      //   pathRewrite: {
-      //     '^/api': ''
-      //   }
-      // }
-    },
+    proxyTable: {},
 
     // Various Dev Server settings
-    //host: '192.168.2.113',
-    host: '192.168.2.121', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
-    autoOpenBrowser: true,
+    host: 'wukun.com', // can be overwritten by process.env.HOST
+    port: 8081, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-
+    
     /**
      * Source Maps
      */
@@ -52,9 +42,8 @@ module.exports = {
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
-
     assetsSubDirectory: 'static',
-    assetsPublicPath: './',
+    assetsPublicPath: '/',
 
     /**
      * Source Maps
