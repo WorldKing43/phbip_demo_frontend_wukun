@@ -7,7 +7,7 @@ import ElementUI from 'element-ui';
 // import 'element-ui/lib/theme-chalk/index.css';
 // import axios from 'axios'
 // import store from './store' //引入store
-// import {Loading} from 'element-ui'
+import {Loading} from 'element-ui'
 // import login from './api/login'
 // import './assets/iconfont/iconfont.js'
 // import './assets/iconfont/iconfont.css'
@@ -24,7 +24,7 @@ import mixin from "./mixin.js"
 Vue.mixin(mixin);
 Vue.use(ElementUI);
 Vue.use(Loading);
-Vue.prototype.hasPerm = hasPermission;
+// Vue.prototype.hasPerm = hasPermission;
 Vue.prototype.globalHeaderStyle = {
   'background': '#E6F0FC',
   'color': '#333',
@@ -96,7 +96,7 @@ Vue.directive('dialogDrag', {
       const disX = e.clientX - dialogHeaderEl.offsetLeft;
       const disY = e.clientY - dialogHeaderEl.offsetTop;
       const screenWidth = document.body.clientWidth; // body当前宽度
-      const screenHeight = document.documentElement.clientHeight; // 可见区域高度(应为body高度，可某些环境下无法获取) 
+      const screenHeight = document.documentElement.clientHeight; // 可见区域高度(应为body高度，可某些环境下无法获取)
       const dragDomWidth = dragDom.offsetWidth; // 对话框宽度
       const dragDomheight = dragDom.offsetHeight; // 对话框高度
       const minDragDomLeft = dragDom.offsetLeft;
@@ -117,7 +117,7 @@ Vue.directive('dialogDrag', {
       };
 
       document.onmousemove = function (e) {
-        // 通过事件委托，计算移动的距离 
+        // 通过事件委托，计算移动的距离
         let left = e.clientX - disX;
         let top = e.clientY - disY;
 
@@ -133,7 +133,7 @@ Vue.directive('dialogDrag', {
         } else if (top > maxDragDomTop) {
           top = maxDragDomTop;
         }
-        // 移动当前元素 
+        // 移动当前元素
         dragDom.style.cssText += `;left:${left + styL}px;top:${top + styT}px;`;
       };
       document.onmouseup = function (e) {
@@ -155,7 +155,7 @@ Vue.prototype.$getTime = function (time) {
 new Vue({
   el: '#app',
   router,
-  store, //使用store
+  // store, //使用store
   data: {
     enablePermission: true, // 总的权限控制开关
     enablePermissionLevel2:true, // 二级菜单的权限控制开关，总开关启用，该项配置才存在意义
